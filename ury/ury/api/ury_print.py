@@ -3,7 +3,7 @@ from frappe import _
 
 import os
 
-from PyPDF2 import PdfWriter
+# from PyPDF2 import PdfWriter
 
 no_cache = 1
 
@@ -39,7 +39,7 @@ def network_printing(
             return f"Failed to connect to the printer: {str(e)}"
 
         try:
-            output = PdfWriter()
+            # output = PdfWriter()
             output = frappe.get_print(
                 doctype,
                 name,
